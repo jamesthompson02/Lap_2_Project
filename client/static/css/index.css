@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+* {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 0px) {
+  :root {
+    --blue-theme: #3decdd;
+  }
+  body {
+    margin: 0px;
+    width: 100vw;
+    background-color: var(--blue-theme);
+    min-height: 100vh;
+  }
+
+  #homepage-title-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  #homepage-title {
+    color: white;
+    font-size: 4rem;
+    font-family: "Poppins";
+  }
+
+  #homepage-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    right: 10%;
+  }
+
+  .homepage-button {
+    background-color: white;
+    min-width: 250px;
+    max-width: 400px;
+    height: 2.5rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+    border: none;
+  }
+
+  .homepage-button a {
+    font-family: "Poppins";
+    text-decoration: none;
+    color: var(--blue-theme);
+    font-size: 1.5rem;
+  }
+
+  .homepage-button a:hover {
+    text-decoration: underline;
+  }
+}

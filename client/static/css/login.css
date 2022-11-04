@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+* {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 0px) {
+  :root {
+    --blue-theme: #3decdd;
+  }
+
+  body {
+    margin: 0px;
+    width: 100vw;
+    background-color: white;
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+
+  div.log-in-container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  h2.log-title {
+    color: white;
+    font-family: "Poppins";
+    font-size: 2rem;
+    text-align: center;
+    flex-basis: 2;
+  }
+
+  div.log-in-nav {
+    background-color: var(--blue-theme);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100vw;
+  }
+
+  div.log-in-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+  }
+
+  div.log-in-details * {
+    margin: 1rem 0;
+  }
+
+  .log-in-input {
+    width: 300px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid var(--blue-theme);
+    color: var(--blue-theme);
+    font-family: "Poppins";
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .log-in-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: var(--blue-theme);
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    height: 50px;
+    width: 250px;
+    border-radius: 15px;
+    border: 1px solid var(--blue-theme);
+    margin-top: 1rem;
+  }
+
+  .log-in-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .fa-arrow-left {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+  }
+  .log-in-fg-pass {
+    font-family: "Poppins";
+  }
+
+  #log-in-sign-redirect {
+    display: flex;
+    font-family: "Poppins";
+    text-align: center;
+  }
+
+  #log-in-sign-redirect p{
+    width: 220px; 
+  }
+
+  #log-in-sign-up {
+    margin: 16px 0px;
+    width: 80px;
+  }
+}

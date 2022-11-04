@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/userPage.css" />
+    <link rel="stylesheet" href="./css/habits.css" />
+    <script src="./js/userSetup.js" defer></script>
+    <script src="./js/userPage.js" type="text/javascript" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div id="user-page-create-habits-container">
+      <div id="user-page-first" class="user-page-section">
+        <div class="user-page-navbar">
+          <h2 class="user-page-h2">Habits</h2>
+          <div id="right-arrow-1" class="fa-solid fa-arrow-right"></div>
+        </div>
+
+        <div class="user-page-details">
+          <h3 class="user-page-h3">Choose at least 1 habit (up to 3):</h3>
+          <div class="user-page-checkbox-container">
+            <input
+              type="checkbox"
+              id="exercise-check"
+              class="user-page-checkbox"
+            />
+            <label for="exercise-check" class="user-page-checkbox-label"
+              >Exercise More</label
+            >
+          </div>
+          <div class="user-page-checkbox-container">
+            <input
+              type="checkbox"
+              id="sleep-check"
+              class="user-page-checkbox"
+            />
+            <label for="sleep-check" class="user-page-checkbox-label"
+              >Sleep More</label
+            >
+          </div>
+          <div class="user-page-checkbox-container">
+            <input
+              type="checkbox"
+              id="water-check"
+              class="user-page-checkbox"
+            />
+            <label for="water-check" class="user-page-checkbox-label"
+              >Drink More Water</label
+            >
+          </div>
+          <button
+            id="user-page-first-next-button"
+            class="user-page-next-button"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+
+      <div id="user-page-second" class="user-page-section">
+        <div class="user-page-navbar">
+          <div id="left-arrow-1" class="fa-solid fa-arrow-left"></div>
+          <h2 class="user-page-h2">Goals</h2>
+        </div>
+
+        <div class="user-page-details">
+          <h3 class="user-page-h3">Specify your goals:</h3>
+
+          <div class="user-page-select-container">
+            <label for="exercise-goal" class="user-page-goal-label"
+              >I want to exercise:</label
+            >
+            <select id="exercise-goal" class="user-page-select-goal">
+              <option value="20" selected>At least 20 minutes per day</option>
+              <option value="30">At least 30 minutes per day</option>
+              <option value="45">At least 45 minutes per day</option>
+              <option value="60">At least 1 hour per day</option>
+              <option value="90">At least 90 minutes per day</option>
+              <option value="120">At least 2 hours per day</option>
+            </select>
+          </div>
+
+          <div class="user-page-select-container">
+            <label for="sleep-goal" class="user-page-goal-label"
+              >I want to sleep:</label
+            >
+            <select id="sleep-goal" class="user-page-select-goal">
+              <option value="5">At least 5 hours per night</option>
+              <option value="6">At least 6 hours per night</option>
+              <option value="7">At least 7 hours per night</option>
+              <option value="8" selected>At least 8 hours per night</option>
+              <option value="9">At least 9 hours per night</option>
+            </select>
+          </div>
+
+          <div class="user-page-select-container">
+            <label for="water-goal" class="user-page-goal-label"
+              >I want to drink:</label
+            >
+            <select id="water-goal" class="user-page-select-goal">
+              <option value="500">At least 500ml of water per day</option>
+              <option value="1000">At least 1 litre of water per day</option>
+              <option value="1500">At least 1500ml of water per day</option>
+              <option value="2000" selected>
+                At least 2 litres of water per day
+              </option>
+              <option value="2500">At least 2500ml of water per day</option>
+              <option value="3000">At least 3 litres of water per day</option>
+            </select>
+          </div>
+
+          <button id="user-page-submit-button" class="user-page-next-button">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="user-page-dashboard">
+        <div class="modal-container" id="modal-container">
+            <div class="modal">
+                <h2>Do you want to logout?</h2>
+                <button>Yes</button>
+                <button id="close">No</button>
+              </div>
+        </div>
+      <div id="habits-container"></div>
+      <div class="chart">
+        <canvas id="myChart"></canvas>
+      </div>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js"
+        integrity="sha512-zjlf0U0eJmSo1Le4/zcZI51ks5SjuQXkU0yOdsOBubjSmio9iCUp8XPLkEAADZNBdR9crRy3cniZ65LF2w8sRA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+    </div>
+  </body>
+</html>

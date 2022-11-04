@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+@media screen and (min-width: 0px) {
+
+    :root {
+        --blue-theme: #3decdd;
+    }
+
+    div#habit-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.habit-container{
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        border: 1px solid var(--blue-theme);
+        margin: 0.5rem;
+    }
+
+}
+

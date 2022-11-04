@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/signUp.css">
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+    <script src="./js/signUp.js" type="text/javascript" defer></script>
+    <script src="./js/jwt-decode.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="sign-up-form-container">
+
+        <div id="sign-up-last" class="sign-up-section">
+            <div class="sign-up-navbar">
+                <a href="../index.html"><div id="sign-up-last-left-arrow" class="fa-solid fa-arrow-left"></div></a>
+                <h2 id="sign-up-last-h2" class="sign-up-h2">Details</h2>
+            </div>
+            <div class="sign-up-details">
+
+                <form id="sign-up-details-form">
+                    <input id="sign-up-name-input" class="sign-up-details-input" type="text" maxlength="40" placeholder="Full name">
+                    <p class="sign-up-error-message">
+                        Please ensure your name is at least two words and each name has a capital letter.
+                    </p>
+                    <input id="sign-up-email-input" class="sign-up-details-input" type="text" maxlength="50" placeholder="Email">
+                    <p class="sign-up-error-message">
+                        Invalid email. For an email to be valid, there must be an "@" character. 
+                        Also, there must be some characters after the "@" symbol, 
+                        with at least one "." - although the "." cannot be the very last character.
+                    </p>
+                    <input id="sign-up-password"  class="sign-up-details-input" type="password" maxlength="50" placeholder="Password">
+                    <p class="sign-up-error-message">
+                        Please ensure your password has: at least 8 characters, a capital letter,
+                        a lower case letter, a number and a special character.
+                    </p>
+                    <input id="sign-up-confirm-password" class="sign-up-details-input" type="password" maxlength="50" placeholder="Confirm Password">
+                    <p class="sign-up-error-message">
+                        Please ensure that both passwords are identical.
+                    </p>
+                    <p id="sign-up-terms">
+                        By signing up to VivaPal, you agree to abide by VivaPal's
+                        <a href="https://shattereddisk.github.io/rickroll/rickroll.mp4" target="_blank" rel="noreferrer">
+                            terms and conditions</a>.
+                    </p>
+                    
+                    <button id="sign-up-submit-button">
+                        Sign Up
+                    </button>
+                
+
+                </form>
+                
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+* {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media screen and (min-width: 0px) {
+
+    :root {
+        --blue-theme: #3decdd;
+    }
+    body {
+        margin: 0px;
+        width: 100vw;
+        background-color: var(--blue-theme);
+        background-color: white;
+        min-height: 100vh;
+    }
+
+    .sign-up-navbar {
+        background-color: var(--blue-theme);
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .fa-arrow-left, .fa-arrow-right {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .fa-arrow-left, .fa-arrow-right {
+        cursor: pointer;
+    }
+
+    .sign-up-h2 {
+        max-width: 200px;
+        color: white;
+        font-family: 'Poppins';
+        font-size: 2rem;
+    }
+
+    .sign-up-details {
+        background-color: white;
+        min-height: fit-content;
+        overflow: hidden;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        right: 10%;
+    }
+
+    .sign-up-h3 {
+        text-align: center;
+        color: var(--blue-theme);
+        font-family: 'Poppins';
+        font-size: 2rem;
+
+    }
+
+    .sign-up-checkbox-container {
+        margin: 1rem 0px;
+        height: 50px;
+        width: 250px;
+    }
+
+    .sign-up-checkbox {
+       display: none;
+    }
+
+    .sign-up-checkbox:checked + label {
+        color: var(--blue-theme);
+        background-color: white;
+        border: 1px solid var(--blue-theme);
+    }
+
+    .sign-up-checkbox-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blue-theme);
+        color: white;
+        font-family: 'Poppins';
+        font-size: 1.5rem;
+        height: 50px;
+        width: 250px;
+        border-radius: 15px;
+        border: none;
+        margin: 1rem 0;
+    }
+
+    .sign-up-checkbox-label:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .sign-up-next-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: var(--blue-theme);
+        font-family: 'Poppins';
+        font-size: 1.5rem;
+        height: 50px;
+        width: 250px;
+        border-radius: 15px;
+        border: 1px solid var(--blue-theme);
+        margin-top: 2rem;
+    }
+
+    .sign-up-next-button:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    #sign-up-last {
+        display: block;
+    }
+
+    #sign-up-last-h2 {
+        margin: auto;
+    }
+
+    #sign-up-details-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign-up-details-input {
+        width: 300px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid var(--blue-theme);
+        color: var(--blue-theme);
+        font-family: 'Poppins';
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .sign-up-details-input:focus {
+        outline: none;
+    }
+
+    .sign-up-details-input::placeholder {
+        color: var(--blue-theme);
+    } 
+
+    .sign-up-error-message {
+        font-family: 'Poppins';
+        color: #ec3d3d;
+        font-size: 0.75rem;
+        max-width: 300px;
+        display: none;
+    }
+     
+    #sign-up-terms {
+        font-family: 'Poppins';
+        max-width: 300px;
+    }
+
+    #sign-up-submit-button {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: var(--blue-theme);
+        font-family: 'Poppins';
+        font-size: 1.5rem;
+        height: 50px;
+        width: 250px;
+        border-radius: 15px;
+        border: 1px solid var(--blue-theme);
+        margin-top: 1rem;
+    }
+
+    #sign-up-submit-button:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+}
